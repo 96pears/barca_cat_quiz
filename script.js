@@ -238,7 +238,7 @@ function renderHome() {
     <img class="top-image" src="${asset(QUIZ.homeImage)}" alt="Main image" />
     <div class="content">
       <h1 class="title">${escapeHtml(QUIZ.title)}</h1>
-      <p class="subtle">Answer 10 quick questions to reveal your cat personality.</p>
+      <p class="subtle">Answer some questions to reveal your cat personality.</p>
       <div class="footer-row">
         <button class="primary" id="startBtn" type="button">Start</button>
       </div>
@@ -372,3 +372,4 @@ function escapeHtml(str) {
 }
 
 renderHome();
+
