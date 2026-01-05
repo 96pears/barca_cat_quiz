@@ -28,7 +28,7 @@ const QUIZ = {
       options: [
         { label: "Stored safely", score: { T: 2 } },
         { label: "Expired 2 years ago", score: { B: 1, Y: 1 } },
-        { label: "Still in my suitcase from last trip", score: { B: 2 } },
+        { label: "Still in my suitcase", score: { B: 2 } },
         { label: "No idea...?", score: { Y: 2 } },
       ],
     },
@@ -86,10 +86,10 @@ const QUIZ = {
       image: "excited.png",
       prompt: "Most excited to...",
       options: [
-        { label: "Admire pretty cathedrals & buildings", score: { Y: 2 } },
-        { label: "Catch a FC Barcelona soccer match", score: { B: 1, T: 1 } },
+        { label: "Admire the pretty cathedrals", score: { Y: 2 } },
+        { label: "Catch a FC Barca soccer match", score: { B: 1, T: 1 } },
         { label: "Eat all the tapas and sip sangria", score: { B: 2 } },
-        { label: "Getting my steps in till my paws hurt", score: { T: 2 } },
+        { label: "Get my steps in till my paws hurt", score: { T: 2 } },
       ],
     },
     {
@@ -238,7 +238,7 @@ function renderHome() {
     <img class="top-image" src="${asset(QUIZ.homeImage)}" alt="Main image" />
     <div class="content">
       <h1 class="title">${escapeHtml(QUIZ.title)}</h1>
-      <p class="subtle">Answer these questions to reveal your cat persona.</p>
+      <p class="subtle">Discover your inner cat.</p>
       <div class="footer-row">
         <button class="primary" id="startBtn" type="button">Start</button>
       </div>
@@ -369,6 +369,7 @@ function escapeHtml(str) {
 }
 
 renderHome();
+
 
 
 
