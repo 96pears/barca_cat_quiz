@@ -1,10 +1,4 @@
-// File: script.js
 "use strict";
-
-/**
- * Single-page quiz.
- * All screens render into #screen; transition ensures previous disappears before next shows.
- */
 
 const ASSETS_DIR = "assets";
 
@@ -369,6 +363,7 @@ function escapeHtml(str) {
 }
 
 renderHome();
+
 
 
 
