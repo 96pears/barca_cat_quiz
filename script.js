@@ -34,7 +34,7 @@ const QUIZ = {
     },
     {
       image: "item.png",
-      prompt: "What is your must-have travel item?",
+      prompt: "Your essential travel item?",
       options: [
         { label: "A book", score: { T: 2 } },
         { label: "Neck pillow = naps", score: { B: 2 } },
@@ -347,10 +347,7 @@ function renderResult(winnerKey) {
         <p class="result-text">${escapeHtml(r.text)}</p>
         <p class="result-extra">${escapeHtml(r.extra)}</p>
       </div>
-      <hr class="sep" />
-      <p class="subtle">Final score — B: ${state.scores.B} • T: ${
-    state.scores.T
-  } • Y: ${state.scores.Y}</p>
+
       <div class="footer-row" style="padding-top:12px">
         <button class="primary" id="restartBtn" type="button">Restart</button>
       </div>
@@ -372,5 +369,6 @@ function escapeHtml(str) {
 }
 
 renderHome();
+
 
 
