@@ -23,7 +23,7 @@ body {
   margin: 0;
   background: var(--btn);
   color: var(--fg);
-  font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: "Fredoka", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -47,6 +47,7 @@ body {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 180ms ease, transform 180ms ease;
+  font-stretch: condensed;
 }
 
 .screen.is-fading {
@@ -186,6 +187,7 @@ hr.sep {
   border-top: 1px solid var(--border);
   margin: 12px 12px;
 }
+
 
 
 
