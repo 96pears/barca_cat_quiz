@@ -1,4 +1,3 @@
-/* File: styles.css */
 :root {
   --bg: #1e1e1e;
   --fg: #f5f3ef;
@@ -22,8 +21,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: "Amatic SC", system-ui, -apple-system, Segoe UI, Roboto, Arial,
-    sans-serif;
+  font-family: "DM Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -185,3 +183,4 @@ hr.sep {
   border-top: 1px solid var(--border);
   margin: 12px 12px;
 }
+
