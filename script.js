@@ -292,18 +292,10 @@ function renderQuestion(i) {
 function renderBonus(tiedKeys) {
   const opts = bonusOptionsForTie(tiedKeys);
 
-  const tieLabel =
-    tiedKeys.length === 3
-      ? "(3 way tie)"
-      : `(tie between ${tiedKeys.join(" and ")})`;
-
   screenEl.innerHTML = `
     <img class="top-image" src="${asset(QUIZ.bonus.image)}" alt="Bonus image" />
     <div class="content">
-      <h2 class="prompt">${escapeHtml(QUIZ.bonus.title)} <span style="opacity:.9">${escapeHtml(
-    tieLabel
-  )}</span></h2>
-      <p class="subtle">${escapeHtml(QUIZ.bonus.subtitle)}</p>
+      <h2 class="prompt">${escapeHtml(QUIZ.bonus.title)}</h2>
       <hr class="sep" />
       <h2 class="prompt" style="padding-top:0">Pick one:</h2>
       <div class="options">
@@ -363,6 +355,7 @@ function escapeHtml(str) {
 }
 
 renderHome();
+
 
 
 
