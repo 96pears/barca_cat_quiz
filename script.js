@@ -121,8 +121,7 @@ const QUIZ = {
         "You are charming, dapper, and a bit mischievous. " +
         "You have a surprisingly strong maternal instinct, especially when someone is sick. " +
         "Rules are not really your thing, but you will jump through hoops for a treat!",
-      extra: "Your favorite chore: " +
-        "Bathroom Cleaning",
+      extra: "Your favorite chore:<br>Bathroom Cleaning",
     },
     T: {
       name: "Turnip",
@@ -132,8 +131,7 @@ const QUIZ = {
         "You’re smart, sassy, and absolutely require luxury. " +
         "Cabinets are your own personal treasure chests, and no snack or toy escapes your inspection. " +
         "You are picky about food and even pickier about who earns your trust!",
-      extra: "Your favorite person: " +
-        "Mommy ♡",
+      extra: "Your favorite person:<br>Mommy ♡",
     },
     Y: {
       name: "Yuki",
@@ -143,8 +141,7 @@ const QUIZ = {
         "You are ethereal, affectionate, and a little spacey. " +
         "You drift through life like a snowflake... until you trip over your own tail. " +
         "It may take time to coax you out from hiding, but once you show up, you are pure sweetness!",
-      extra: "Your favorite animal: " +
-        "Frogs",
+      extra: "Your favorite animal:<br>Frogs",
     },
   },
 };
@@ -334,7 +331,7 @@ function renderResult(winnerKey) {
       <div class="result-block">
         <h2 class="result-title">${escapeHtml(r.title)}</h2>
         <p class="result-text">${escapeHtml(r.text)}</p>
-        <p class="result-extra">${escapeHtml(r.extra)}</p>
+        <p class="result-extra">${(r.extra)}</p>
       </div>
 
       <div class="footer-row" style="padding-top:12px">
@@ -358,6 +355,7 @@ function escapeHtml(str) {
 }
 
 renderHome();
+
 
 
 
